@@ -1,0 +1,179 @@
+.bodyWrap{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+}
+
+/* 맨 위 버튼 */
+.topBtns{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 10px;
+}
+.tb{
+    padding: 0 8px;
+}
+
+/* 드롭박스 */
+.imgWrapper {
+    background-color: rgb(236, 242, 251);
+    display: grid; /* 자식 요소의 레이아웃을 유지하기 위해 grid 사용 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* 아이템 간 간격 */
+    padding: 15px;
+    border-radius: 30px;
+}
+#grid {
+    background-color: rgb(210, 221, 236);
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    right: 20px;
+    max-width: 300px;
+    max-height: 400px; /* 최대 높이 설정 */
+    overflow-y: auto; /* 스크롤 가능 */
+    padding: 25px;
+    border-radius: 30px;
+    border: 1px solid rgb(190, 198, 209);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.gridItem {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+.plusBtn{
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid gray;
+    align-self: center;
+}
+
+/* 링크 이동 타일 */
+#tileBox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 15px;
+}
+.tile{
+    position: relative;
+}
+.youtube{
+    position: absolute;
+    left: 100px;
+    top: 7px;
+}
+.naver{
+    position: absolute;
+    left: 100px;
+    top: 7px;
+}
+.slack{
+    position: absolute;
+    left: 100px;
+    top: 7px;
+}
+
+/* 이미지 */
+.topImg{
+    width: 30px;
+    height: 30px;
+}
+.inputImg{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+.tileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(220, 218, 218);
+}
+.plusImg{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.name{
+    text-align: center;
+    margin-top: -25px;
+}
+.btImg{
+    border: none;
+    background-color: white;
+}
+
+/* 검색바 */
+.inputWrap{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 30px;
+    margin-top: -30px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+#searchInput{
+    width: 600px;
+    border: 0px;
+    padding: 0 15px;
+    margin: 0 5px;
+}
+input:focus {outline: none;}
+
+/* 맞춤설정 바 */
+.set{
+    background-color: rgb(215, 229, 250);
+    /* height: 40px; */
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+}
+
+/* 타일 */
+.naver{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 커서 포인터 */
+.point{
+    cursor : pointer;
+}
+.topImg:hover{
+    border-radius: 50%;
+    background-color: rgb(213, 213, 213);
+}
+.topName:hover{
+    text-decoration: underline;
+}
+.tile:hover{
+    border-radius: 7%;
+    background-color: rgb(213, 213, 213);
+    height: 150px;
+}
+.tile:hover .plusImg{
+    transition: 1s;
+    opacity: 1;
+}
+.plusImg:hover{
+    background-color: rgb(175, 171, 171);
+}
