@@ -19,20 +19,21 @@
 
 /* 드롭박스 */
 .imgWrapper {
-    background-color: rgb(236, 242, 251);
-    display: grid; /* 자식 요소의 레이아웃을 유지하기 위해 grid 사용 */
+    background-color: rgb(237, 241, 247);
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px; /* 아이템 간 간격 */
     padding: 15px;
     border-radius: 30px;
+    justify-items: center;
 }
 #grid {
-    background-color: rgb(210, 221, 236);
-    display: none; /* 기본적으로 숨김 */
+    background-color: rgb(210, 221, 237);
+    display: none;
     position: fixed;
     right: 20px;
     max-width: 300px;
-    max-height: 400px; /* 최대 높이 설정 */
+    max-height: 400px;
     overflow-y: auto; /* 스크롤 가능 */
     padding: 25px;
     border-radius: 30px;
@@ -41,19 +42,40 @@
     z-index: 1;
 }
 .gridItem {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     cursor: pointer;
-    border: 1px solid;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
+    padding: 10px;
+    width: 50px;
+    height: 75px;
+    font-size: 13px;
+    position: relative; /* 텍스트 표시 위해 */
+    overflow: hidden;
 }
+.gridItem span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 초과된 텍스트는 ... */
+    width: 100%; /* 부모 요소에 맞춰 크기 조정 */
+}
+
 .plusBtn{
     border-radius: 30px;
-    width: 160px;
+    width: 170px;
     height: 40px;
     border: 1px solid gray;
-    align-self: center;
+    margin-top: 20px;
+    margin-left: 60px;
+    color: rgb(53, 53, 235);
+    background-color: transparent;
+}
+.gridImage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 /* 링크 이동 타일 */
@@ -138,7 +160,6 @@ input:focus {outline: none;}
 /* 맞춤설정 바 */
 .set{
     background-color: rgb(215, 229, 250);
-    /* height: 40px; */
     border: none;
     border-radius: 30px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -176,4 +197,18 @@ input:focus {outline: none;}
 }
 .plusImg:hover{
     background-color: rgb(175, 171, 171);
+}
+.gridItem:hover span {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    text-align: center;
+}
+.gridItem:hover {
+    border-radius: 10px;
+    background-color: rgb(213, 213, 213);
+    transition: 0.3s;
+}
+.plusBtn:hover{
+    background-color: rgb(237, 241, 247);
 }

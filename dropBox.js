@@ -6,45 +6,59 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
     const data = [
-        { id: 1, name: '계정', url: 'https://myaccount.google.com/?utm_source=OGB&utm_medium=app' },
-        { id: 2, name: '검색', url: 'https://www.google.com/?authuser=0' },
-        { id: 3, name: '지도', url: 'https://www.google.com/maps?authuser=0' },
-        { id: 4, name: 'Youtube', url: 'https://www.youtube.com/?authuser=0' },
-        { id: 5, name: 'Gemini', url: 'https://gemini.google.com/?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all' },
-        { id: 6, name: '뉴스', url: 'https://news.google.com/home?hl=ko&gl=KR&ceid=KR:ko' },
-        { id: 7, name: 'Gmail', url: 'https://mail.google.com/mail/u/0/' },
-        { id: 8, name: 'Meet', url: 'https://meet.google.com/landing?hs=197&authuser=0&pli=1' },
-        { id: 9, name: '채팅', url: 'https://mail.google.com/chat/u/0/#chat/home' },
-        { id: 10, name: '주소록', url: 'https://contacts.google.com/' },
-        { id: 11, name: '드라이브', url: 'https://drive.google.com/drive/u/0/home' },
-        { id: 12, name: 'Calendar', url: '#' },
-        { id: 13, name: 'Play', url: '#' },
-        { id: 14, name: '번역', url: '#' },
-        { id: 15, name: '사진', url: '#' },
-        { id: 16, name: '내 광고센터', url: '#' },
-        { id: 17, name: '쇼핑', url: '#' },
-        { id: 18, name: '금융', url: '#' },
-        { id: 19, name: 'Docs', url: '#' },
-        { id: 20, name: 'Sheets', url: '#' },
-        { id: 21, name: 'Slides', url: '#' },
-        { id: 22, name: '도서', url: '#' },
-        { id: 23, name: 'Blogger', url: '#' },
-        { id: 24, name: 'Keep', url: '#' },
-        { id: 25, name: '클래스룸', url: '#' },
-        { id: 26, name: '어스', url: '#' },
-        { id: 27, name: '저장됨', url: '#' },
-        { id: 28, name: '아트 앤 컬처', url: '#' },
-        { id: 29, name: 'Google Ads', url: '#' },
-        { id: 30, name: 'Merchant Center', url: '#' },
-        { id: 31, name: '여행', url: '#' },
-        { id: 32, name: 'Google One', url: '#' }
+        { id: 1, name: '계정', url: 'https://myaccount.google.com/?utm_source=OGB&utm_medium=app', img:'./imgs/icon.png'},
+        { id: 2, name: '검색', url: 'https://www.google.com/?authuser=0', img:'./imgs/icon.png' },
+        { id: 3, name: '지도', url: 'https://www.google.com/maps?authuser=0', img:'./imgs/icon.png' },
+        { id: 4, name: 'Youtube', url: 'https://www.youtube.com/?authuser=0', img:'./imgs/icon.png' },
+        { id: 5, name: 'Gemini', url: 'https://gemini.google.com/?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all', img:'./imgs/icon.png' },
+        { id: 6, name: '뉴스', url: 'https://news.google.com/home?hl=ko&gl=KR&ceid=KR:ko', img:'./imgs/icon.png' },
+        { id: 7, name: 'Gmail', url: 'https://mail.google.com/mail/u/0/', img:'./imgs/icon.png' },
+        { id: 8, name: 'Meet', url: 'https://meet.google.com/landing?hs=197&authuser=0&pli=1', img:'./imgs/icon.png' },
+        { id: 9, name: '채팅', url: 'https://mail.google.com/chat/u/0/#chat/home', img:'./imgs/icon.png' },
+        { id: 10, name: '주소록', url: 'https://contacts.google.com/', img:'./imgs/icon.png' },
+        { id: 11, name: '드라이브', url: 'https://drive.google.com/drive/u/0/home', img:'./imgs/icon.png' },
+        { id: 12, name: 'Calendar', url: '#', img:'./imgs/icon.png' },
+        { id: 13, name: 'Play', url: '#', img:'./imgs/icon.png' },
+        { id: 14, name: '번역', url: '#', img:'./imgs/icon.png' },
+        { id: 15, name: '사진', url: '#', img:'./imgs/icon.png' },
+        { id: 16, name: '내 광고센터', url: '#', img:'./imgs/icon.png' },
+        { id: 17, name: '쇼핑', url: '#', img:'./imgs/icon.png' },
+        { id: 18, name: '금융', url: '#', img:'./imgs/icon.png' },
+        { id: 19, name: 'Docs', url: '#', img:'./imgs/icon.png' },
+        { id: 20, name: 'Sheets', url: '#', img:'./imgs/icon.png' },
+        { id: 21, name: 'Slides', url: '#', img:'./imgs/icon.png' },
+        { id: 22, name: '도서', url: '#', img:'./imgs/icon.png' },
+        { id: 23, name: 'Blogger', url: '#', img:'./imgs/icon.png' },
+        { id: 24, name: 'Keep', url: '#', img:'./imgs/icon.png' },
+        { id: 25, name: '클래스룸', url: '#', img:'./imgs/icon.png' },
+        { id: 26, name: '어스', url: '#', img:'./imgs/icon.png' },
+        { id: 27, name: '저장됨', url: '#', img:'./imgs/icon.png' },
+        { id: 28, name: '아트 앤 컬처', url: '#', img:'./imgs/icon.png' },
+        { id: 29, name: 'Google Ads', url: '#', img:'./imgs/icon.png' },
+        { id: 30, name: 'Merchant Center', url: '#', img:'./imgs/icon.png' },
+        { id: 31, name: '여행', url: '#', img:'./imgs/icon.png' },
+        { id: 32, name: 'Google One', url: '#', img:'./imgs/icon.png' }
     ];
 
     // 드롭박스 요소 생성
     data.forEach(item => {
         const div = document.createElement('div');
         div.className = 'gridItem';
-        div.textContent = item.name;
+
+        // 이미지 추가
+        if (item.img) {
+            const img = document.createElement('img');
+            img.src = item.img;
+            img.alt = item.name;
+            img.className = 'gridImage';
+            div.appendChild(img);
+        }
+
+        // 텍스트 추가
+        const text = document.createElement('span');
+        text.textContent = item.name;
+        div.appendChild(text);
+
         div.addEventListener('click', () => {
             if (item.url) {
                 window.open(item.url, '_blank');
