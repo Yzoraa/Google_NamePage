@@ -6,8 +6,8 @@
 <img src="https://github.com/user-attachments/assets/fd19fb69-617d-43ac-9ec9-7f2b9b55e0da">
 <br /><br />
 
-<p>드롭박스 버튼 클릭 시, 이미지 랜덤으로 생성</p>
-<img src="https://github.com/user-attachments/assets/f42cfeaf-ffa2-459d-900f-1f14af73f641">
+<p>- 드롭박스 버튼 클릭 시, 이미지 랜덤으로 생성</p>
+<img src="https://github.com/user-attachments/assets/f42cfeaf-ffa2-459d-900f-1f14af73f641" width="600px">
 
 <h2>📚 Tech Stack</h2>
 <div>
