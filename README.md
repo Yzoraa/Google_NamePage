@@ -2,7 +2,7 @@
 <p>HTML과 CSS, JavaScript를 사용해 만든 가상 '구글 메인 페이지' 입니다.</p>
 
 <h2>:star: 실행화면</h2>
-<p>메인화면</p>
+<p>[메인화면]</p>
 <img src="https://github.com/user-attachments/assets/fd19fb69-617d-43ac-9ec9-7f2b9b55e0da">
 <br /><br />
 
