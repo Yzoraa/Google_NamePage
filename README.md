@@ -12,7 +12,7 @@
 <img src="https://github.com/user-attachments/assets/ba1a9aa1-108b-40de-adec-356e77e3d414" width="600px">
 
 
-<br />
+<br /><br />
 <h2>📚 Tech Stack</h2>
 <div>
   <img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=HTML5&logoColor=white" />
