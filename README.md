@@ -8,7 +8,7 @@
 
 <p>- 드롭박스 이미지 랜덤으로 생성</p>
 <p>- 이미지 클릭 시 해당 페이지로 이동</p>
-<img src="https://github.com/user-attachments/assets/f42cfeaf-ffa2-459d-900f-1f14af73f641" width="600px">
+<img src="https://github.com/user-attachments/assets/ba1a9aa1-108b-40de-adec-356e77e3d414" width="600px">
 
 <h2>📚 Tech Stack</h2>
 <div>
